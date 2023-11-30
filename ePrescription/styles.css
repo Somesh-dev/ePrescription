@@ -1,0 +1,34 @@
+
+/* Developed by Somesh Sarkar */
+
+#alert_personal_success {
+    display: none;
+}
+
+#alert_no_medicine {
+    display: none;
+}
+
+#alert_medicine_success{
+    display: none;
+}
+
+#alert_notes_success{
+    display: none;
+}
+
+.prescription-area {
+    padding-top: 5px;
+}
+
+legend{
+    color: #a94442;
+}
+
+/* #comment_form {
+    display: none;
+}
+
+#medicine_form{
+    display: none;
+} */

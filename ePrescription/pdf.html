@@ -1,0 +1,132 @@
+<!-- Developed by Somesh Sarkar -->
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title id="title">ENT Newtown Prescription</title>
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css'
+        integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+
+    <style>
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+
+    <img class='header' src='assests/ePrescriptionHeader.png'>
+
+    <div class='container'>
+
+        <div>
+            <img style="width: 5%;" src="assests/px.png">
+        </div>
+        <br>
+        <div class="container">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Patient Name</td>
+                        <td>Age</td>
+                        <td>Gender</td>
+                        <td>Phone No</td>
+                        <td>Diagnosis for</td>
+                        <td>Date</td>
+                    </tr>
+                </thead>
+                <tbody id="medicine_list_tbody">
+                    <tr id="medicine_list_tr_0">
+                        <td><span class='bold' id='patient_name'>NA</span></td>
+                        <td><span class='bold' id='patient_age'>NA</span></td>
+                        <td><span class='bold' id='patient_gender'>NA</span></td>
+                        <td><span class='bold' id='patient_no'>NA</span></td>
+                        <td><span class='bold' id='patient_diagnosis'>NA</span></td>
+                        <td><span class='bold' id='patient_date'>NA</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="container" id="medicine_table">
+
+        </div>
+
+        <br><br>
+
+
+        <div class="container">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Notes</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class='bold' id='patient_notes'>NA</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+
+            <div class="form-group">
+                <!-- Button -->
+                <div class="col-md-4">
+                    <button onclick="openPrintPDFWindow();" type="Button" id="save_pdf" class="btn btn-warning">Save
+                        E-Prescription <span class="glyphicon glyphicon-save"></span></button>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="form-group">
+                <!-- Button -->
+                <div class="col-md-4">
+                    <button type="Button" onclick="openGeneratePrescriptionWindow();" id="generate_another_btn"
+                        class="btn btn-warning">Generate Another Prescription <span
+                            class="glyphicon glyphicon-refresh"></span></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <img class='footer' src='assests/ePrescriptionFooter.png'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="pdf_action.js"></script>
+</body>
+
+</html>
